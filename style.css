@@ -19,7 +19,7 @@
 	/* Foreground colors */
 	--btn-fg-firstThree: var(--color-black);
 	--btn-fg: var(--color-white);
-	--screen-fg: var(var(--color-white));
+	--screen-fg: var(--color-white);
 }
 
 .light {
@@ -27,7 +27,7 @@
 	--btn-bg: var(--color-gray);
 	--btn-fg: var(--color-black);
 	--main-bg: var(--color-white);
-	--body-bg: var(--color-yellow);
+	--body-bg: var(--color-gray);
 	--screen-fg: var(--color-black);
 }
 
@@ -59,8 +59,16 @@ main {
 }
 
 .screen {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
 	height: 200px;
-	color: #fff;
+	inline-size: 277.6px;
+	word-break: break-all;
+	overflow-wrap: break-word;
+	text-align: right;
+	color: var(--screen-fg);
+	font-size: 4vw;
 }
 
 .keyboard {
